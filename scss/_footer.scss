@@ -1,0 +1,29 @@
+footer {
+    margin-top: -8rem;
+    padding-top: 10rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: $veryDarkCyan;
+    color: #ffffff;
+    text-align: left;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.contact-details-address {
+    position: relative;
+    padding-left: 30px;
+}
+
+.contact-details-address::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px; 
+    height: 20px; 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f3c5';
+}
