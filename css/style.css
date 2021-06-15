@@ -184,23 +184,110 @@ footer {
   text-align: left;
 }
 
+.footer-logo {
+  margin-bottom: 1.5rem;
+}
+
 .footer-logo img {
   max-width: 150px;
 }
 
-.contact-details-address {
-  position: relative;
-  padding-left: 30px;
+.contact-details {
+  margin-bottom: 3rem;
 }
 
-.contact-details-address::before {
+.contact-details-links {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.contact-details-links:hover {
+  text-decoration: underline;
+}
+
+.contact-details-address,
+.contact-details-phone,
+.contact-details-email {
+  position: relative;
+  padding-left: 2.5rem;
+  line-height: 1.5;
+}
+
+.contact-details-address::before,
+.contact-details-phone::before,
+.contact-details-email::before {
+  content: '';
   position: absolute;
-  top: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0.4rem;
   left: 0;
   width: 20px;
   height: 20px;
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f3c5';
+}
+
+.contact-details-address::before {
+  background-image: url("../images/icon-location.svg");
+}
+
+.contact-details-phone::before {
+  background-image: url("../images/icon-phone.svg");
+}
+
+.contact-details-email::before {
+  background-image: url("../images/icon-email.svg");
+}
+
+.menu-one li,
+.menu-two li {
+  margin-bottom: 1.5rem;
+}
+
+.menu-two {
+  margin-bottom: 3rem;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ffffff;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50%;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.social a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.social a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.copyright {
+  padding: 1.5rem 0 2rem;
+  font-size: 0.675rem;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
