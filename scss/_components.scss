@@ -13,6 +13,16 @@
     border-radius: 2em;
     background-color: white;
     color: black;
+    transition: color 250ms ease-in-out;
+
+    &:hover {
+        color: $grayishBlue;
+    }
+
+    @media (min-width: 700px) {
+        font-size: 1rem;
+        padding: 0.75em 4em;
+    }
 }
 
 .btn--primary {
@@ -21,6 +31,15 @@
     background-color: $pink;
     color: white;
     font-size: 14px;
+    transition: background-color 250ms ease-in-out;
+
+    &:hover {
+        background-color: lighten($pink, 10%);
+    }
+
+    @media (min-width: 700px) {
+        padding: 1.3em 5em;
+    }
 }
 
 .shadow-box {

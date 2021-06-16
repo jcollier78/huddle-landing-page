@@ -7,8 +7,14 @@
     background-size: 105%;
     padding-bottom: 2rem;
     margin-bottom: 4rem;
-}
 
+    @media (min-width: 700px) {
+        background-image: url('../images/bg-hero-desktop.svg');
+        background-size: cover;
+        background-position: center 83%;
+        padding-bottom: 4rem
+    }
+}
 
 .main-nav {
     display: flex;
@@ -16,10 +22,19 @@
     align-items: center;
     padding-top: 1em;
     padding-bottom: 1.75em;
+
+    @media (min-width: 700px) {
+        padding-top: 3rem;
+        margin-bottom: 3rem;
+    }
 }
 
 .logo-img {
     width: 7.5rem;
+
+    @media (min-width: 700px) {
+        width: 12.5rem;
+    }
 }
 
 .hero {
@@ -27,25 +42,50 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 1em;
+
+    @media (min-width: 700px) {
+     flex-direction: row;
+     align-items: center;  
+     padding: 0; 
+    }
 }
 
 .hero-content {
     margin-bottom: 3rem;
+    
+    @media (min-width: 700px) {
+        flex: 0 0 32rem;
+        margin-bottom: 0;
+    }
 }
 
 .hero-title {
     margin: 0 0 1em;
     font-size: 1.4rem;
+
+    @media (min-width: 700px) {
+        font-size: 2.5rem; 
+        margin-bottom: 0.5em;
+    }
 }
 
 .hero-text {
     margin: 0 0 2.3em;
     font-size: 1rem;
     line-height: 1.5;
+
+    @media (min-width: 700px) {
+        font-size: 1.125rem;
+    }
 }
 
 .hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 700px) {
+        width: 700px;
+        padding-left: 2rem;
+    }
 }
