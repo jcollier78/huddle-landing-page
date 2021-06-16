@@ -19,7 +19,7 @@
         color: $grayishBlue;
     }
 
-    @media (min-width: 700px) {
+    @media (min-width: 68rem) {
         font-size: 1rem;
         padding: 0.75em 4em;
     }
@@ -37,7 +37,7 @@
         background-color: lighten($pink, 10%);
     }
 
-    @media (min-width: 700px) {
+    @media (min-width: 68rem) {
         padding: 1.3em 5em;
     }
 }

@@ -4,32 +4,40 @@
 
 .feature-card {
 
-    @media (min-width: 700px) {
+    @media (min-width: 68rem) {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 }
 
-.feature__image{
+.feature__image {
     margin-top: 2rem;
     margin-bottom: 2rem;
 
-    @media (min-width: 700px) {
+    @media (min-width: 68rem) {
         order: 2;
     }
 }
 
 .feature_description {
 
-    @media (min-width: 700px) {
+    @media (min-width: 68rem) {
         order: 1;
+    }
+}
+
+.feature_description,
+.feature__image {
+
+    @media (min-width: 68rem) {
+        padding-left: 3rem;
     }
 }
 
 .img_right {
 
-    @media (min-width: 700px) {
+    @media (min-width: 68rem) {
         order: 1;
     }
 }
@@ -37,7 +45,7 @@
 .feature-title {
     font-size: 1.4rem;
 
-    @media (min-width: 700px) {
+    @media (min-width: 68rem) {
         font-size: 2rem;
     }
 }
@@ -47,7 +55,7 @@
     line-height: 1.5;
     color: $grayishBlue;
 
-    @media (min-width: 700px) {
+    @media (min-width: 68rem) {
         font-size: 1.2rem;
     }
 }
